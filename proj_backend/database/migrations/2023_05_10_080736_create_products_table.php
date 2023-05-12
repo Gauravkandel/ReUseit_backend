@@ -17,6 +17,10 @@ return new class extends Migration
             $table->unsignedBigInteger("category_id");
             $table->string("pname");
             $table->string("description");
+            $table->string("image1");
+            $table->string("image2");
+            $table->string("image3");
+            $table->string("image4")->nullable();
             $table->decimal('price', 8, 2);
             $table->string("used_time");
             $table->timestamps();
