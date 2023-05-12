@@ -47,7 +47,7 @@ class logController extends Controller
                 'message' => ['These credentials do not match our records.']
             ], 404);
         }
-        $token = $user->createToken('my-app-token')->plainTextToken;
+        $token = $user->createToken('access_token')->plainTextToken;
         $response = [
             'user' => $user,
             'token' => $token
