@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger("product_id");
             $table->string("image_url");
-            //this is message
             $table->timestamps();
             $table->foreign("product_id")->references('id')->on('products');
         });
